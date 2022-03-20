@@ -78,38 +78,77 @@
 }
 
 
-
-/* Styling order contents */
-.order {
-    width: 100%;
-    height: 100vh;
+/* Menu section styling */
+.menu {
+         width: 100%;
+         height: 100vh;
 }
 
-h3 {
-    text-align: center;
-    padding-top: 7%;
-    font-size: 30px;
-}
-
-.order p {
-    text-align: center;
-    padding-top: 3%;
-}
-
-.order .images{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 40px;
-}
-
-
-.order .images img {
-    height: 300px;
-    width: 400px;
-    border-radius: 10px;
-}
+.menu .title{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 5%;
+    }
     
+
+.menu .carousel .card{
+    background: whitesmoke;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 16%;
+}
+.menu .carousel .card:hover{
+    background: yellow;
+}
+.menu .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.menu .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.menu .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.menu .carousel .card img{
+    height: 360px;
+    width: 470px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+.menu .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid yellow!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: yellow!important;
+}
 
 
 
