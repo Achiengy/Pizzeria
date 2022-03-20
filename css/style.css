@@ -4,6 +4,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lobster', 'cursive';
+   
     font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+}
+
+.navbar .logo {
+    font-family: 'Lobster', 'cursive';
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 40px;
+}
+.navbar .logo span {
+    color: black;
+    font-family: 'Lobster', 'cursive';
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 180px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
 }
