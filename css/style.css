@@ -42,6 +42,7 @@
 }
 
 .home .home-content .text-1 {
+    /* text-align: center; */
     padding-left: 20px;
     color: #fff;
     font-size: 6em;
@@ -68,6 +69,12 @@
 .home .btn:hover {
     border: 3px solid yellow;
     color: white;
+}
+
+.home .home-img {
+    float: right;
+    height: 500px;
+    margin-top: -250px;
 }
 
 
