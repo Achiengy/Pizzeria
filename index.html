@@ -77,8 +77,9 @@
     </section>
 
 
-    <!-- START HEREJKCKCLKCLKC;LVC;VC;V;LVKJVCHJC[PD;PCD';VC';V] -->
+    <!-- Services section element -->
     <section class="services">
+        <h3>Our Aim</h3>
         <div class="row">
         
                <div class="carousel-inner py-4">
@@ -86,9 +87,9 @@
                  <div class="carousel-item active">
                    <div class="container">
                      <div class="row">
-                       <div class="col-lg-4">
+                       <div class="col-lg-4 d-none d-lg-block">
                          <div class="card">
-                           <img src="./images/delivery.png" class="card-img-top pic">
+                           <img src="./images/delivery.png" class="card-img-top pic" height="250px">
                            <div class="card-body">
                              <p class="card-text"> Fast Delivery  </p>
                             </div>
@@ -97,7 +98,7 @@
      
                        <div class="col-lg-4 d-none d-lg-block">
                          <div class="card">
-                           <img  src="./images/pizz.png" class="card-img-top pic" >
+                           <img  src="./images/pizz.png" class="card-img-top pic" height="250px" >
                              <div class="card-body">
                              <p class="card-text">Quality Food</p>
                             </div>
@@ -106,9 +107,9 @@
      
                        <div class="col-lg-4 d-none d-lg-block">
                          <div class="card">
-                           <img src="./images/cash.png" class="card-img-top pic">
+                           <img src="./images/cash.png" class="card-img-top pic" height="250px">
                              <div class="card-body">
-                             <p class="card-text"> Affordable  </p>
+                             <p class="card-text"> Affordable Prices </p>
                             </div>
                          </div>
                        </div>
@@ -119,6 +120,50 @@
                </div>
         </div> 
     </section> 
+
+    <!-- Order section elements -->
+
+    <!-- Ordering form -->
+    <section class="order"></section>
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Order your pizza</h4>
+        <form id="order">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="size">Select Size</label>
+              <select class="form-control" id="pizzaSize">
+                  <option value="">Choose...</option>
+                  <option value ="600">Small</option>
+                  <option value ="900">Medium</option>
+                  <option value ="1200">Large</option>
+              </select>
+          </div>
+          <div class="form-group col-md-4">
+              <label for="crust">Select Crust</label>
+              <select class="form-control" id="pizzacrust">
+                  <option value="">Choose...</option>
+                <option value = "150">Wheat-thin crust</option>
+                <option value = "175">Gluten-free crust</option>
+                <option value = "200">Cheese crust</option>
+              </select>
+          </div>
+          <div class="form-group col-md-4">
+              <label for="toppings">Select Toppings</label>
+              <select class="form-control" id="pizzaToppings">
+                  <option value="">Choose...</option>
+                <option value = "225">Pepperoni</option>
+                <option value = "245">Sausages</option>
+                <option value = "265">Pineapple</option>
+              </select>
+          </div>
+          </div>
+          <button type="submit" class="btn btn-warning">Select choice</button>
+          <br>
+          <br>
+          <br>
+        </form>
+
+    </section>
      
                
 
