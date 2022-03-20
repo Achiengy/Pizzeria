@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 
 </head>
 <body>
@@ -28,8 +29,9 @@
         <div class="home-content">
             <h1 class="text-1">We make tasty<br><span>Pizza</span> like a pro</h1>
         </div>
-        <a class="btn active" href="#menu">Order Now</a>
 
+        <a class="btn active" href="#menu" id="menus">Menu</a>
+        <a class="btn active" href="#order">Order Now</a>
        <img src="./images/pizza.png" class="home-img">
     </section>
 
@@ -74,48 +76,51 @@
         </div>
     </section>
 
-    <!-- Ordering elements -->
-    <section class="order" id="order">
-        <form>
-            <div class="form-row align-items-center">
-              <div class="col-auto my-1">
-                <label class="mr-sm-2" for="inlineFormCustomSelect">Choose size of pizza</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                  <option selected>Choose...</option>
-                  <option value="1">Small</option>
-                  <option value="2">Medium</option>
-                  <option value="3">Large</option>
-                  <option value="4">Extra-Large</option>
-                </select>
-              </div>
-              <div class="col-auto my-1">
-                <label class="mr-sm-2" for="inlineFormCustomSelect">Choose type of crust</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                  <option selected>Choose...</option>
-                  <option value="1">Cheese Crust</option>
-                  <option value="2">Gluten-free Crust</option>
-                  <option value="3">Wheat Thin Crust</option>
-                </select>
-              </div>
-              <div class="col-auto my-1">
-                <label class="mr-sm-2" for="inlineFormCustomSelect">Choose type of toppping</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                  <option selected>Choose...</option>
-                  <option value="1">Pepperoni</option>
-                  <option value="2">Mushroom</option>
-                  <option value="3">Sausages</option>
-                  <option value="4">Onions</option>
-                  <option value="5">Pineapple</option>
-                </select>
-              </div>
-            
-             <button type="submit" class="btn btn-primary">Submit</button>
-             
-            </div>
-          </form>
 
-    </section>
+    <!-- START HEREJKCKCLKCLKC;LVC;VC;V;LVKJVCHJC[PD;PCD';VC';V] -->
+    <section class="services">
+        <div class="row">
+        
+               <div class="carousel-inner py-4">
+                 <!-- services -->
+                 <div class="carousel-item active">
+                   <div class="container">
+                     <div class="row">
+                       <div class="col-lg-4">
+                         <div class="card">
+                           <img src="./images/delivery.png" class="card-img-top pic">
+                           <div class="card-body">
+                             <p class="card-text"> Fast Delivery  </p>
+                            </div>
+                         </div>
+                       </div>
+     
+                       <div class="col-lg-4 d-none d-lg-block">
+                         <div class="card">
+                           <img  src="./images/pizz.png" class="card-img-top pic" >
+                             <div class="card-body">
+                             <p class="card-text">Quality Food</p>
+                            </div>
+                         </div>
+                       </div>
+     
+                       <div class="col-lg-4 d-none d-lg-block">
+                         <div class="card">
+                           <img src="./images/cash.png" class="card-img-top pic">
+                             <div class="card-body">
+                             <p class="card-text"> Affordable  </p>
+                            </div>
+                         </div>
+                       </div>
 
+                     </div>
+                   </div>
+                 </div>
+               </div>
+        </div> 
+    </section> 
+     
+               
 
 </body>
 </html>
