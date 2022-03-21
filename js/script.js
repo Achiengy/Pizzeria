@@ -46,12 +46,12 @@ function resetFields() {
 }
 
 function genRandId(){
-    var rand = Math.floor(Math.random() * 10)
-    return `#PIZZERIA${rand}-J`
+    var rand = Math.floor(Math.random() * 8)
+    return `P${rand}-U`
 }
-function genOderId(){
-    var rand = Math.floor(Math.random() * 10)
-    return `#PIZZERIA${rand}-J`
+function genOrderId(){
+    var rand = Math.floor(Math.random() * 12)
+    return `P${rand}-P`
 }
 var reset = function(){
     location.reload();
@@ -150,7 +150,7 @@ $(document).ready(function(){
         $("#message").hide()
         $("#target").hide()
         $("#stayLocation").hide()
-        $("#track").append(`<strong>${genOderId()}</strong>`)
+        $("#track").append(`<strong>${genOrderId()}</strong>`)
         $("#total").append(`<strong>${getGrandTotal()}</strong>`)
       });
     
@@ -167,9 +167,9 @@ $(document).ready(function(){
             $("#withLoc").hide()
             $("#stay-text").hide()
             $("#stay").hide()
-            $("#delly").append(`Total amount, inclusive of delivery fee is <strong>${sum + 200}</strong> 
-                Your order will be delivered to 
-                <strong>${location}</strong>`)
+            $("#delly").append(`Total amount payable, inclusive of delivery fee is <strong>${sum + 200}</strong>. 
+                Ordered items will be delivered to 
+                <strong>${location}</strong>.`)
         }
            
     })

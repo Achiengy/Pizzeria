@@ -129,7 +129,7 @@
     <!-- Order section elements -->
  <section class="order" id="order">
     <div class="row">
-     <div class="col">
+     <div class="col-sm">
         
         <!-- Ordering form -->
         <form id="form">
@@ -170,9 +170,9 @@
     </div>
 
  <!-- Hidden Elements -->
-        <div class="col">
+        <div class="col-sm">
         <div id="toHide">
-            <table class="table table-light">
+            <table class="table table-bordered table-responsive">
               <thead>
                 <tr>
                   <th scope="col">Receipt No.</th>
@@ -186,57 +186,60 @@
                
               </tbody>
             </table>
-            <button type="submit" id="target" class="btn btn-success">Click to view your order.</button>
+            <button type="submit" id="target" class="btn btn-warning">Click to view your order.</button>
           </div>
         </div>
         
       
 
          <!-- Hidden Message -->
-            <div class="col">
+            <div class="col-sm">
             <div id="alsoToHide" class="col-md-4 order-md-2 mb-4 select">
-              <h4 class="d-flex justify-content-between align-items-center mb-3">
-                <span class="text-muted">Receipt No. <span id="track"></span>  </span>
+              <h4 class="d-flex">
+                <span class="text-muted">Receipt No.<span id="track"></span>  </span>
               </h4>
               <div class="list-group mb-3">
-                <div class="col list-group-item d-flex align-items-center">Your total Amount is <span id="total"></span> </div>
+                <p>Total amount charged is <span id="total"></span></p>
+               
                 <div id="wouldYou">
-                  <div class="col list-group-item d-flex justify-content-between lh-condensed">
-                    <p>Would you like it delivered?</p>   
-                    <br>
-                  <div class="list-group-item d-flex justify-content-between lh-condensed">
-                    <button type="submit" id="delivery" class="btn btn-primary">Yes</button>
-                    <br>
-                    <button type="submit" id="nodeli" class="btn btn-success">No</button>
+                  <div class="col">
+                    <p class="text-wrap">Indicate delivery location?</p>   
+                  </div>
+                    
+                  <div class="">
+                    <button type="submit" id="delivery" class="btn btn-info">Yes</button>
+                    <button type="submit" id="nodeli" class="btn btn-danger">No</button>
                   </div>
                 </div>
-                </div>
+                
                 <div id="stayLocation" class="col list-group-item">
-                  <div class="col">
+                  <br>
+                  <div class="d-flex align-center">
                     <p>Extra Ksh.200 will be charged for delivery.</p>
                   </div>
                   <label id="stay-text" for="stay">Indicate delivery location</label>
-                  <br>
                   <br>
                   <input type="text" name="stay" id="stay">
                   <input type="button" id="withLoc" class="btn btn-active check" value="Enter">
                 </div>
               </div> 
-             <div id="final" class="check">
-              <button type="submit" id="confirm" class="btn btn-active">Confirm Order</button>
-              <input type="button" onclick="reset()" value="Cancel Order" id="cansel" class="btn btn-active">
+              <br>
+             <div id="final" class="check d-flex"><br>
+              <button type="submit" id="confirm" class="btn btn-primary">Confirm</button>
+              <input type="button" onclick="reset()" value="Cancel" id="cansel" class="btn btn-danger">
              </div>
               <div id="message" class="col btn-active">
                 <br>
                 <br>
                 <p> Thank you for shopping with pizzeria! Enjoy your meal.</p>
-                <input type="button" class="btn btn-primary check" onclick="reset()" value="checked">
+                  <input type="button" class="btn btn-primary check" onclick="reset()" value="Check Out">  
                 <p id="delly"></p>
-              </div>
+                
+              </div><br>
             </div>
         </div>
       </div>
-    <!-- </div> -->
+  
 </div>
 </div>
 
