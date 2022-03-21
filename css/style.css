@@ -53,6 +53,7 @@ html {
     font-weight: bold;
     margin-left: 70px;
 }
+
 /* Styling home contents */
 .home {
     width: 100%;
@@ -62,7 +63,6 @@ html {
 }
 
 .home .home-content .text-1 {
-    /* text-align: center; */
     padding-left: 20px;
     color: #fff;
     font-size: 6em;
@@ -125,6 +125,7 @@ html {
 .menu .carousel .card:hover{
     background: yellow;
 }
+
 .menu .carousel .card .box{
     display: flex;
     flex-direction: column;
@@ -132,9 +133,11 @@ html {
     justify-content: center;
     transition: all 0.3s ease;
 }
+
 .menu .carousel .card:hover .box{
     transform: scale(1.05);
 }
+
 .menu .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
@@ -146,9 +149,11 @@ html {
     object-fit: cover;
     transition: all 0.3s ease;
 }
+
 .menu .carousel .card:hover img{
     border-color: #fff;
 }
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -162,21 +167,22 @@ html {
     border: 2px solid yellow!important;
     transition: all 0.3s ease;
 }
+
 .owl-dot.active{
     width: 35px;
     border-radius: 14px;
 }
+
 .owl-dot.active,
 .owl-dot:hover{
     background: yellow!important;
 }
 
 
-
 /* Services styling */
 .services{
     width: 100%;
-    height: 6git 0vh;
+    height: 60vh;
 }
 .services h3{
     text-align: center;
