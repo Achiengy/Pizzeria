@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Styling navbar */
 .navbar {
@@ -32,7 +36,23 @@
     margin-top: -55px;
 }
 
+.navbar ul {
+    float: right;
+}
 
+.navbar ul li {
+    list-style: none;
+    display: inline-block; 
+   
+    margin-right: 20px;                 
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: yellow; 
+    font-weight: bold;
+    margin-left: 70px;
+}
 /* Styling home contents */
 .home {
     width: 100%;
@@ -60,7 +80,7 @@
     font-weight: bolder;
     float: left;
     border: 2px solid yellow;
-    margin-left: 15%;
+    margin-left: 2%;
     margin-top: 3%;
     border-radius: 20px;
     text-decoration: none;
@@ -70,6 +90,7 @@
     border: 3px solid yellow;
     color: white;
 }
+
 
 .home .home-img {
     float: right;
@@ -94,12 +115,12 @@
 
 .menu .carousel .card{
     background: whitesmoke;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
-    margin-top: 16%;
+    margin-top: 12%;
 }
 .menu .carousel .card:hover{
     background: yellow;
@@ -149,6 +170,41 @@
 .owl-dot:hover{
     background: yellow!important;
 }
+
+
+
+/* Services styling */
+.services{
+    width: 100%;
+    height: 6git 0vh;
+}
+.services h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+.services .card {
+    height: 300px;
+    margin-top: 7%;
+}
+
+/* Order form */
+.order {
+    height: 70vh;
+    width: 100%;
+    margin-top: 20%;
+}
+
+.order form {
+    margin-top: 30px;
+    height: 150px;
+    width: 400px;
+    border: 1px solid yellow;
+}
+
+
 
 
 
